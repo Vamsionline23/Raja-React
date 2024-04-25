@@ -1,0 +1,83 @@
+header {
+    background-color: rgb(255, 0, 0);
+    position :fixed;
+    left: 0;
+    margin: 0;
+   top: 20;
+    right: 0;
+    top: 5px;
+    height: 120px;
+    display: inline;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+    font-size: smaller;
+    }
+    header * {
+    display: inline;
+    }
+    header li {
+    margin: 50px;
+    }
+    header li a {
+    color: white;
+    font-size: smaller;
+    text-decoration: color(from red srgb pink);
+    font-style: oblique;
+    margin: 20;
+    }
+    body {    
+      
+        font-family: "Poppins", sans-serif;
+        background-color: #fcfcfc;
+        size: 25px;
+    }
+    /* <reset-style> ============================ */
+button {
+  border: none;
+  background: none;
+  
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+  size: 2px;
+}
+/* <main-style> ============================ */
+.menu__button {
+  min-width: 62px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  position: relative;
+}
+
+.menu__button::before {
+  content: '';
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.menu__button:hover::before {
+  height: 100%;
+  top: 0;
+}
+
+.menu__button span {
+  color: #fff;
+  line-height: 1;
+  transition: color .4s;
+}
+
+.menu__button:hover span {
+  color: #000;
+}

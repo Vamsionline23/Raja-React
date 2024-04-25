@@ -1,0 +1,116 @@
+section {
+    width: 100%;
+    /*   skew adds a 4.76 degree slope and the translateY equation is based on the fact that a 4.76 degree slope has a gradient of 1:12 */
+    -webkit-transform: skew(0, -4.76deg) translateY(calc(50vw/-12));
+        -ms-transform: skew(0, -4.76deg) translateY(calc(50vw/-12));
+            transform: skew(0, -4.76deg) translateY(calc(50vw/-12));
+    /*   And finally we account for the slope to make sure each section can occupy the full window... I added 10vw just to give it a little extra padding */
+    min-height: calc(100vh - (110vw/-12));
+  }
+  
+  section:not(:last-child) *{
+    -webkit-transform: skew(0, 4.76deg) translateY(calc(50vw/12));
+        -ms-transform: skew(0, 4.76deg) translateY(calc(50vw/12));
+            transform: skew(0, 4.76deg) translateY(calc(50vw/12));
+    margin-top: calc(50vw/-12);
+  }
+    
+  section:last-child {
+    position: relative;
+    -webkit-transform: skew(0);
+        -ms-transform: skew(0);
+            transform: skew(0);
+    margin-top: calc(100vw/-12);
+    padding-top: calc(100vw/12);
+    min-height: 100vh;
+    z-index: -1;
+  }
+  
+  
+  
+  
+  
+  /* COLORS AND OTHER STYLES TO ILLUSTRATE SECTIONS */
+  section:nth-child(1) {
+    background:  linear-gradient( #5b1515,#e61111) padding-box,
+    linear-gradient(145deg, transparent 55%,#e81cff, #40c9ff) border-box;
+
+  }
+  section:nth-child(2) {
+    background-color: black;
+  }
+  
+  
+  
+  h1{
+    font-family: sans-serif;
+    color: #fff;
+  }
+
+  
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.banner{
+    color: #fff;
+    margin-top: 8%;
+    
+}
+
+.banner h1{
+    margin: 80px 0 50px;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+#hero{
+    color: #D3AB35;
+  -webkit-text-stroke-color: rgba(152,66,45);
+  -webkit-text-stroke-width: 1.5px; 
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.6);
+}
+
+.banner a{
+    padding: 12px;
+    width: 150px;
+    display: block;
+    text-decoration: none !important;
+    color: rgba(152,66,45);
+    background: #D3AB01;
+    border: 1.5px solid rgb(15, 14, 14);
+    border-radius: 5px;
+    text-align: center;
+    margin: 30px auto;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 2px 4px 3px rgba(0,0,0,0.2);
+    transition: .38s ease;
+}
+
+.banner a:hover{
+    color: #fff;
+    background: transparent;
+}
+
+.banner img{
+    position:relative;
+    right: -27%;
+    top: -20%;
+    height: 125%;
+    width: max-content;
+}
+
+.spider{
+    width: 20px;
+    position: absolute;
+}
+.img-fluid{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  rotate: 180deg;
+  
+}
