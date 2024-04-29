@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Raja-React/static/css/main.a617e6ce.css",
+    "main.js": "/Raja-React/static/js/main.b4a85589.js",
+    "static/js/787.917857b7.chunk.js": "/Raja-React/static/js/787.917857b7.chunk.js",
+    "index.html": "/Raja-React/index.html",
+    "main.a617e6ce.css.map": "/Raja-React/static/css/main.a617e6ce.css.map",
+    "main.b4a85589.js.map": "/Raja-React/static/js/main.b4a85589.js.map",
+    "787.917857b7.chunk.js.map": "/Raja-React/static/js/787.917857b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a617e6ce.css",
+    "static/js/main.b4a85589.js"
+  ]
+}
